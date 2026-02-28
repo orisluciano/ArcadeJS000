@@ -16,3 +16,4 @@ class Componente {
     }
     actualizarPos(){}
 }
+export default Componente;

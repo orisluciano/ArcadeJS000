@@ -28,9 +28,9 @@ class InicioVista {
         };
     }
 
-    btnStartOnClick() {
+    async btnStartOnClick() {
         let juego = new JuegoVista();
-        juego.cargarPantalla();
+        await juego.cargarPantalla();
         let nucleo = new JuegoNucleo();
         //nucleo.empezar();
     }

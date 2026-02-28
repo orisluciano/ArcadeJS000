@@ -1,8 +1,9 @@
 class JuegoArea {
-    div = document.getElementById("divCanvas");
+    div;
     canva;
     contexto;
     constructor(parameters) {
+        this.div = document.getElementById("divCanvas");
         this.div.innerHTML = "";
         this.canva = document.createElement("canvas");
         this.canva.width = 800;

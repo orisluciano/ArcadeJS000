@@ -1,10 +1,11 @@
+import Componente from "./Componente.js";
 import JuegoArea from "./JuegoArea.js";
 
 class JuegoNucleo {
     canvas = document.getElementById("canvas");
     area = new JuegoArea();
     intervalo = null;
-    personaje = new Componente(0,0);
+    personaje = new Componente();
     constructor(parameters) {
         
     }
