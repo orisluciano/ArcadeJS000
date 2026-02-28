@@ -1,23 +1,88 @@
-.circChico {
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    background-color: #f3a7a7;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+        /* Estilo general del cuerpo para simular una pantalla CRT */
+        body {
+            background-color: #000;
+            color: #33ff33; /* Verde neón clásico */
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            text-transform: uppercase;
+        }
 
-.circGrande {
-    height: 100px;
-    width: 100px;
-    background-color: #fce2f8;
-    border-radius: 50%;
-    position: relative;
-}
+        /* Contenedor principal */
+        .arcade-container {
+            text-align: center;
+            border: 4px solid #33ff33;
+            padding: 50px;
+            box-shadow: 0 0 20px #33ff33;
+            background: rgba(0, 20, 0, 0.9);
+        }
 
-.col {
-    display: flex;
-    cursor: pointer;
-}
+        /* Título con efecto de brillo */
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            text-shadow: 3px 3px #ff00ff, -3px -3px #00ffff;
+            letter-spacing: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+            color: #ff00ff;
+        }
+
+        /* Animación de parpadeo para el mensaje de inicio */
+        .insert-coin {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            animation: blink 0.8s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Tabla de puntuaciones altas */
+        .high-scores {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #00ffff;
+        }
+
+        .score-row {
+            display: flex;
+            justify-content: space-between;
+            width: 250px;
+            margin: 5px auto;
+        }
+
+        /* Botón de acción oculto o simulado */
+        .start-btn {
+            background: none;
+            border: 2px solid #33ff33;
+            color: #33ff33;
+            padding: 10px 20px;
+            font-family: inherit;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .start-btn:hover {
+            background: #33ff33;
+            color: #000;
+        }
+
+        /* agregados por mi */
+
+        .canvasJuego {
+            max-width: 800px;
+            max-height: 600px;
+        }
