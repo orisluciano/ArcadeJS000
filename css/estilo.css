@@ -1,0 +1,23 @@
+.circChico {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #f3a7a7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circGrande {
+    height: 100px;
+    width: 100px;
+    background-color: #fce2f8;
+    border-radius: 50%;
+    position: relative;
+}
+
+.col {
+    display: flex;
+    cursor: pointer;
+}
