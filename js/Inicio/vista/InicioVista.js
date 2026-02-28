@@ -32,7 +32,7 @@ class InicioVista {
         let juego = new JuegoVista();
         await juego.cargarPantalla();
         let nucleo = new JuegoNucleo();
-        //nucleo.empezar();
+        nucleo.empezar();
     }
 }
 

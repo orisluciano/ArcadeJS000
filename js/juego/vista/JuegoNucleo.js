@@ -11,15 +11,17 @@ class JuegoNucleo {
     }
 
     empezar(){
-        this.intervalo = setInterval(this.bucle, 1000);
+        this.intervalo = setInterval(this.bucle(this.area.canva), 1000);
     }
 
     parar(){
         clearInterval(this.intervalo);
     }
 
-    bucle(){
+    bucle(canva){
         console.log("Juego empezado");
+        let personaje = new Componente();
+        personaje.nuevaPos(canva);
     }
 
 }
